@@ -63,6 +63,13 @@ public class PlayerControllerX : MonoBehaviour
             Destroy(other.gameObject);
             money++;
         }
+        else if (other.gameObject.CompareTag("Money+"))
+        {
+            fireworksParticle.Play();
+            playerAudio.PlayOneShot(moneySound, 1.0f);
+            Destroy(other.gameObject);
+            money = (money + 5);
+        }
         else if (other.collider.gameObject.CompareTag("Ground"))
         {
             gamesOver();
