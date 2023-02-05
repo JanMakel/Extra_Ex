@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   leftBound: -17
+  rightBound: 17
 --- !u!65 &6813272084001677359
 BoxCollider:
   m_ObjectHideFlags: 0

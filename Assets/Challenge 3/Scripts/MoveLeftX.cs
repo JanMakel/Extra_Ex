@@ -23,7 +23,7 @@ public class MoveLeftX : MonoBehaviour
     void Update()
     {
         
-        // If game is not over, move to the left
+        // If game is not over, move to the left or the right depends on the X
         if (!playerControllerScript.gameOver && transform.position.x > (0))
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
